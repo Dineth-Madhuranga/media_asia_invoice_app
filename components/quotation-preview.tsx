@@ -37,7 +37,7 @@ export const QuotationPreview = ({ invoiceData }: QuotationPreviewProps) => {
 
   return (
     <div
-      className={`invoice-container bg-white px-8 py-8 shadow-lg print:shadow-none print:border-none ${poppins.variable} font-sans`}
+      className={`invoice-container bg-white px-8 py-8 print:shadow-none print:border-none ${poppins.variable} font-sans`}
       style={{ width: "210mm", minHeight: "297mm", margin: "0 auto" }}
     >
       {/* Header Section */}
