@@ -238,7 +238,7 @@ export const InvoiceForm = ({ onGenerateInvoice }: InvoiceFormProps) => {
             <Label htmlFor={`unitType-${item.id}`}>Unit Type</Label>
             <Select
               value={item.unitType}
-              onValueChange={(value: "Qty" | "Days" | "Units") => handleUnitTypeChange(item.id, value)}
+              onValueChange={(value: "Qty" | "Days" | "Units" | "sq. ft.") => handleUnitTypeChange(item.id, value)}
             >
               <SelectTrigger>
                 <SelectValue placeholder="Select unit type" />
@@ -247,6 +247,7 @@ export const InvoiceForm = ({ onGenerateInvoice }: InvoiceFormProps) => {
                 <SelectItem value="Qty">Qty</SelectItem>
                 <SelectItem value="Days">Days</SelectItem>
                 <SelectItem value="Units">Units</SelectItem>
+                <SelectItem value="sq. ft.">sq. ft.</SelectItem>
               </SelectContent>
             </Select>
           </div>
