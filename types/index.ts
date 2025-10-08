@@ -16,6 +16,7 @@ export type InvoiceData = {
   quotationNo: string
   invoiceNo: string
   referenceNo: string
+  poNumber?: string
   projectTitle: string
   items: InvoiceItem[]
   discount: number
