@@ -25,6 +25,7 @@ export const QuotationPreview = ({ invoiceData }: QuotationPreviewProps) => {
     quotationNo,
     invoiceNo,
     referenceNo,
+    poNumber,
     projectTitle,
     items,
     discount,
@@ -77,6 +78,12 @@ export const QuotationPreview = ({ invoiceData }: QuotationPreviewProps) => {
               <p className="font-medium text-left">{invoiceNo}</p>
               <p className="text-left">{"Ref No:"}</p>
               <p className="font-medium text-left">{referenceNo}</p>
+              {poNumber && (
+                <>
+                  <p className="text-left">{"PO No:"}</p>
+                  <p className="font-medium text-left">{poNumber}</p>
+                </>
+              )}
             </div>
           </div>
         </div>
