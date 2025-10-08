@@ -27,6 +27,7 @@ export const InvoiceForm = ({ onGenerateInvoice }: InvoiceFormProps) => {
     quotationNo: "",
     invoiceNo: "",
     referenceNo: "",
+    poNumber: "",
     projectTitle: "",
     items: [
       {
@@ -203,6 +204,16 @@ export const InvoiceForm = ({ onGenerateInvoice }: InvoiceFormProps) => {
             value={invoiceData.referenceNo}
             onChange={handleInputChange}
             readOnly
+          />
+        </div>
+        <div>
+          <Label htmlFor="poNumber">PO Number (optional)</Label>
+          <Input
+            id="poNumber"
+            name="poNumber"
+            value={invoiceData.poNumber || ""}
+            onChange={handleInputChange}
+            placeholder="Enter PO number"
           />
         </div>
       </div>
